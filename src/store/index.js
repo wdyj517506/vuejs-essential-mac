@@ -33,7 +33,7 @@ const actions = {
     commit('UPDATE_AUTH', false)
     router.push({ name: 'Home', params: { logout: true } })
   },
-  updateUser({ state, comit }, user) {
+  updateUser({ state, commit }, user) {
     const stateUser = state.user
 
     if (stateUser && typeof stateUser === 'object') {

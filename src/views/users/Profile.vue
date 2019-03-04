@@ -1,9 +1,3 @@
-<!--
- @Time    : 2019-02-27 15:19
- @Author  : Marke
- @File    : Profile.py
- @Software: WebStorm
--->
 <template>
   <div class="col-md-9 left-col">
     <div class="panel panel-default padding-md">
@@ -98,7 +92,8 @@
               hobbies: this.hobbies,
               introduction: this.introduction
             })
-            alert('修改成功')
+            // 删除 alert，使用实例的 $message 的 show 方法
+            this.$message.show('修改成功')
           }
         })
       }
